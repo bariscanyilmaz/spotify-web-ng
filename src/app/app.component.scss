@@ -7,14 +7,14 @@
 
 .topbar{
     grid-area: topbar;
-    background-color: $dark;
+    background-color: $soft-dark;
 }
 
 .player{
     grid-area: player;
-    background-color: $dark;
+    background-color: $active-dark;
 }
 .main{
     grid-area: main;
-    background-color: $active-dark;
+    background-color: $soft-dark;
 }
