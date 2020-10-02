@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+
+html,body{
+   
+    margin: 0;
+}
+
+$main-heigt:calc(100vh - 150px);
+$main-width:calc(100vw - 232px);
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns:232px $main-width ;
+    grid-template-rows:60px $main-heigt 90px;
+    grid-template-areas: 
+    "sidebar topbar" 
+    "sidebar main"
+    "player player";
+    
+}
+

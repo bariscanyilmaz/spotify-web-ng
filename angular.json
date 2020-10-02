@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/stylings"]
+            },
             "outputPath": "dist/spotify-web-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -66,6 +69,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            
             "browserTarget": "spotify-web-ng:build"
           },
           "configurations": {
@@ -83,6 +87,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": ["./stylings"]
+            },
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
