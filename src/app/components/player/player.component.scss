@@ -16,7 +16,7 @@
 
 .now-playing-bar-right {
   height: 32px;
-  width: 390px;
+  width: 212px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -24,21 +24,17 @@
   font-size: 14px;
 }
 
-.now-playing-bar-right{
-  button{
-    
+.now-playing-bar-right {
+  button {
     margin-left: 8px;
     margin-right: 8px;
-
   }
 
-  svg{
+  svg {
     height: 16px;
     width: 16px;
   }
 }
-
-
 
 .song-profile {
   height: 56px;
@@ -80,7 +76,6 @@
   width: 520px;
 }
 .player-controls-buttons {
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -98,20 +93,33 @@
   }
 }
 
-.player-controls-playback{
+.player-controls-playback {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.playback-progress-bar{
-  width: 520px;
+.playback-progress-bar {
+  width: 440px;
   border-radius: 50%;
 }
 
 .progress-bar-bg {
+  position: relative;
   height: 4px;
   width: 100%;
   background-color: $progress;
+  border-radius: 4px;
+
+  .progress-bar-fg {
+    position: absolute;
+    left: 20%;
+    height: 4px;
+    left: 0;
+    width: 20%;
+    background-color: $gray;
+    border-radius: 4px;
+  }
+  
 }
 
 .volume-bar {
