@@ -7,20 +7,18 @@
 }
 
 @font-face {
-    font-family: "Circular Book";
-    src: url("/assets/fonts/Circular Std Book.ttf");
-    font-weight: 400;
-  }
-
-
-::-webkit-scrollbar{
-    background-color: $dark;
+  font-family: "Circular Book";
+  src: url("/assets/fonts/Circular Std Book.ttf");
+  font-weight: 400;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: $gray;
+::-webkit-scrollbar {
+  background-color: $dark;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: $gray;
+}
 
 html,
 body {
@@ -40,4 +38,13 @@ $main-width: calc(100vw - 232px);
     "sidebar topbar"
     "sidebar main"
     "player player";
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  &:focus {
+    outline-style: none;
+  }
 }
