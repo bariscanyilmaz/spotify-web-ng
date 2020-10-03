@@ -7,6 +7,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PlayerComponent } from './components/player/player.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     TopbarComponent
   ],
   imports: [
+    HttpClientModule,
     AngularSvgIconModule.forRoot(),
     BrowserModule,
     AppRoutingModule

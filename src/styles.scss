@@ -1,23 +1,43 @@
+@import "variables";
 
-html,body{
-   
-    margin: 0;
+@font-face {
+  font-family: "Circular Bold";
+  src: url("/assets/fonts/Circular Std Bold.ttf");
+  font-weight: 700;
 }
 
-$main-heigt:calc(100vh - 150px);
-$main-width:calc(100vw - 232px);
+@font-face {
+    font-family: "Circular Book";
+    src: url("/assets/fonts/Circular Std Book.ttf");
+    font-weight: 400;
+  }
 
 
-.container{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns:232px $main-width ;
-    grid-template-rows:60px $main-heigt 90px;
-    grid-template-areas: 
-    "sidebar topbar" 
+::-webkit-scrollbar{
+    background-color: $dark;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $gray;
+}
+
+
+html,
+body {
+  margin: 0;
+}
+
+$main-heigt: calc(100vh - 150px);
+$main-width: calc(100vw - 232px);
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 232px $main-width;
+  grid-template-rows: 60px $main-heigt 90px;
+  grid-template-areas:
+    "sidebar topbar"
     "sidebar main"
     "player player";
-    
 }
-

@@ -1,0 +1,110 @@
+@import "variables";
+
+svg-icon {
+  height: 24px;
+  width: 24px;
+}
+
+nav {
+  margin-top: 24px;
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+
+    .button {
+      border-radius: 5px;
+
+      &.active {
+        background-color: $active-white;
+        color: $white;
+      }
+    }
+
+    a.button {
+      font-family: "Circular Std Book", Helvetica, sans-serif;
+      text-decoration: none;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: $gray;
+
+      height: 40px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+
+      span {
+        line-height: 20px;
+        font-size: 16px;
+        padding-left: 16px;
+        vertical-align: super;
+        overflow-x: hidden;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .add-play-list {
+    fill: $dark;
+    background-color: $gray;
+    path {
+      fill: $dark;
+    }
+  }
+
+  .play-lists {
+    margin-top: 24px;
+  }
+  .play-lists-items {
+
+    max-height: 180px;
+    overflow-y: scroll;
+    
+  }
+
+  .play-list-item {
+    max-height: 32px;
+    height: 32px;
+    min-height: 32px;
+    color: $gray;
+    font-size: 14px;
+    font-family: "Circular Std Book", Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .title {
+    color: $gray;
+    font-family: "Circular Std Bold", Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+}
+.logo {
+  width: 100%;
+  margin-bottom: 18px;
+
+  .brand {
+    padding-left: 24px;
+  }
+}
+
+.fill-gradient {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}
+
+.root_divider {
+  margin: 8px 24px;
+  background-color: $active-dark;
+  border: none;
+  height: 1px;
+}
