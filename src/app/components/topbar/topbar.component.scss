@@ -1,0 +1,70 @@
+@import "variables";
+
+.top-bar{
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+
+}
+
+.top-bar-lists{
+    height: 36xp;
+    width: 100%;
+}
+
+.user-profile{
+    width: 190px;
+    height: 32px;
+}
+.search-bar{
+    width: 360px;
+    height: 40px;
+}
+
+.btn-nav-previous,.btn-nav-next{
+    background-color: $dark;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+
+    .button {
+      border-radius: 5px;
+
+      &.active {
+        background-color: $active-white;
+        color: $white;
+      }
+    }
+
+    a.button {
+      font-family: "Circular Std Book", Helvetica, sans-serif;
+      text-decoration: none;
+      padding-right: 16px;
+      color: $gray;
+
+      height: 40px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+
+      span {
+        line-height: 20px;
+        font-size: 16px;
+        padding-left: 16px;
+        vertical-align: super;
+        overflow-x: hidden;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
