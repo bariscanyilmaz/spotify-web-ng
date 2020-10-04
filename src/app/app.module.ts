@@ -8,13 +8,17 @@ import { PlayerComponent } from './components/player/player.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './components/search/search.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     PlayerComponent,
-    TopbarComponent
+    TopbarComponent,
+    SearchComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
