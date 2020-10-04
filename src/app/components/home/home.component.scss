@@ -1,0 +1,17 @@
+@import "variables";
+
+.home-container{
+    padding-left: 32px;
+    padding-right: 32px;
+    
+    .title{
+        font-size: 24px;
+        font-family: "Circular Std Book", Helvetica, sans-serif;;
+        color: $white;
+    }
+
+    .shortccut-content{
+        display: flex;
+        
+    }
+}
