@@ -20,6 +20,10 @@
   background-color: $gray;
 }
 
+::-webkit-input-placeholder{
+  text-align: left;
+}
+
 html,
 body {
   margin: 0;

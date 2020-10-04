@@ -1,4 +1,4 @@
-<div class="top-bar">
+<div class="top-bar-container">
     <div class="nav-buttons">
         <button class="btn-radius btn-nav-previous">
             <svg-icon src="assets/icons/icon/smaller.svg"></svg-icon>
@@ -7,7 +7,7 @@
             <svg-icon src="assets/icons/icon/greater.svg"></svg-icon>
         </button>
     </div>
-    <div class="top-bar-lits">
+    <div class="top-bar-lists">
         <div class="actions">
             <a [routerLink]="['/']" class="button active">
                 <span>Play Lists</span>
@@ -25,8 +25,14 @@
 
         </div>
     </div>
-    <div class="search-bar">
+    <div class="search-bar-container">
 
+        <div class="search-bar">
+            <span class="icon-search">
+                <svg-icon src="assets/icons/icon/search.svg"></svg-icon>
+            </span>
+            <input type="text" class="search-bar-text" placeholder="Search Artists, Songs or Podcasts">
+        </div>
     </div>
     <button class="user-profile">
         <img src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=943549079124781&height=300&width=300&ext=1604404117&hash=AeRt2JCL8sdUhbhh"
