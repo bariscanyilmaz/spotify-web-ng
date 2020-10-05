@@ -10,6 +10,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
+import { SongCardComponent } from './components/song-card/song-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './components/home/home.component';
     PlayerComponent,
     TopbarComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    SongCardComponent
   ],
   imports: [
     HttpClientModule,

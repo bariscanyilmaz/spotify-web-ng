@@ -1,0 +1,77 @@
+@import "variables";
+
+.card {
+  height: 267px;
+  width: 193px;
+  border-radius: 10px;
+  background-color: $active-dark;
+  position: relative;
+
+  &:hover{
+    .play{
+        opacity: 1;
+    }
+  }
+
+  .cover {
+    height: 153px;
+    width: 153px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-image: url("https://i.scdn.co/image/ab67706f00000003b12df017ac94dc002b038a60");
+    background-size: cover;
+
+    &.artist {
+      background-image: url("https://i.scdn.co/image/121166c58f391a367c24412d8ee29346c157105d");
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    position: absolute;
+    left: 20px;
+    top: 190px;
+    font-size: 16px;
+    font-family: "Circular Std Bold", Helvetica, sans-serif;
+    color: $white;
+  }
+
+  .definition {
+    position: absolute;
+    left: 20px;
+    top: 220px;
+    font-size: 11px;
+    font-family: "Circular Std Book", Helvetica, sans-serif;
+    color: $gray;
+  }
+}
+
+.close,
+.play {
+  position: absolute;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 157px;
+  top: 4px;
+  z-index: 1;
+  display: none;
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 133px;
+  top: 209px;
+  z-index: 1;
+  opacity: 0;
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
