@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
+import { CollectionsComponent } from './components/collections/collections.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SongCardComponent } from './components/song-card/song-card.component';
     TopbarComponent,
     SearchComponent,
     HomeComponent,
-    SongCardComponent
+    SongCardComponent,
+    CollectionsComponent
   ],
   imports: [
     HttpClientModule,
