@@ -10,7 +10,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
-import { SongCardComponent } from './components/song-card/song-card.component';
+import { AlbumCardComponent } from './components/album-card/album-card.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
     TopbarComponent,
     SearchComponent,
     HomeComponent,
-    SongCardComponent,
+    AlbumCardComponent,
     CollectionsComponent
   ],
   imports: [
