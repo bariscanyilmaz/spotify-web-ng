@@ -9,16 +9,16 @@
     </div>
     <div class="top-bar-lists" *ngIf="pathValues[0]=='collections'">
         <div class="actions">
-            <a [routerLink]="['/collections/playlists']" class="button active">
+            <a [routerLink]="['/collections/playlists']" [ngClass]="{'active':pathValues[1]=='playlists'}"  class="button">
                 <span>Play Lists</span>
             </a>
-            <a [routerLink]="['/collections/podcasts']" class="button">
+            <a [routerLink]="['/collections/podcasts']" [ngClass]="{'active':pathValues[1]=='podcasts'}"  class="button">
                 <span>Podcasts</span>
             </a>
-            <a [routerLink]="['/collections/artists']" class="button">
+            <a [routerLink]="['/collections/artists']" [ngClass]="{'active':pathValues[1]=='artists'}" class="button">
                 <span>Artists</span>
             </a>
-            <a [routerLink]="['/collections/albums']" class="button">
+            <a [routerLink]="['/collections/albums']" [ngClass]="{'active':pathValues[1]=='albums'}" class="button">
                 <span>Albums</span>
             </a>
         </div>
