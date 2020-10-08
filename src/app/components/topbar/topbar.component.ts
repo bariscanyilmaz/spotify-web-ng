@@ -16,8 +16,7 @@ export class TopbarComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((ev:any)=>{
       if (ev instanceof NavigationEnd) {
-        this.pathValues=ev.url.split('/').filter(e=>e!=='')
-        console.log(this.pathValues);
+        this.pathValues=ev.url.split('/').filter(e=>e!=='');
       }
     });
   }
