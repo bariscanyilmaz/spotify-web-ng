@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Album  } from "src/app/models/albums";
+import { DataService } from "src/app/services/data.service";
+import { RouteListenerService } from 'src/app/services/route-listener.service';
 
 
 @Component({
@@ -8,11 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectionsComponent implements OnInit{
 
-  constructor() {
+
+  results:Album[];
+
+  constructor(private dataService:DataService,private routeListenerService:RouteListenerService) {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
+    this.dataService.getData().subscribe(res=>{
+      this.results=res;
+    })
+
+    this.routeListenerService.getRoute().subscribe(route=>{
+      this.dataService.setData(route[1]);
+    })
     
   }
 
