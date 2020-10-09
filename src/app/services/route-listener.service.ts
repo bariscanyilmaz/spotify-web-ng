@@ -12,9 +12,10 @@ export class RouteListenerService {
 
   }
 
-
   setRoute(route:string[]){
+    
     this._route.next(route);
+
   }
 
   getRoute(){

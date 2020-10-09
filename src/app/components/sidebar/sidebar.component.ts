@@ -16,7 +16,6 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.routeListener.getRoute().subscribe((arr)=>{
       this.pathValues=arr;
-      console.log(this.pathValues);
     })
 
   }

@@ -2,32 +2,13 @@
     <div class="recommended">
         <div class="headline">
             <h2 class="title"><a href="/genre/shortcuts" class="genre">Shortcuts</a></h2>
-          
+
         </div>
         <div class="content">
 
-            
-
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
-            <app-album-card></app-album-card>
+            <ng-container *ngFor="let item of results">
+                <app-album-card [title]="item.title" [defination]="item.defination" [isArtist]="item.isArtist" [route]="item.route" ></app-album-card>
+            </ng-container>
         </div>
     </div>
 </div>

@@ -7,7 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AlbumCardComponent implements OnInit {
 
+
   @Input('isArtist') isArtist:boolean=false;
+  @Input('title') title:string='Pop Goes Classical';
+  @Input('defination') defination:string='Your favorite songs';
+  @Input('route') route:string='/collections/playlists';
 
   constructor() { }
 
