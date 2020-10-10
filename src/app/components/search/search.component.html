@@ -18,7 +18,7 @@
             <h2 class="title">Most Listened Genres</h2>
         </div>
         <div class="slider" >
-            <button (click)="left()" class="btn-scroll left">
+            <button (click)="left()" class="btn-scroll left" [ngClass]="{hide: !isShowLeft}">
                 <svg-icon src="assets/icons/icon/smaller.svg"></svg-icon>
             </button>
             <div class="container" #container>
@@ -28,7 +28,7 @@
                 <app-genre-card></app-genre-card>
                 <app-genre-card></app-genre-card>
             </div>
-            <button (click)="right()" class="btn-scroll right">
+            <button (click)="right()" class="btn-scroll right"  [ngClass]="{hide: isShowLeft}">
                 <svg-icon src="assets/icons/icon/greater.svg"></svg-icon>
             </button>
         </div>
