@@ -1,0 +1,61 @@
+@import "variables";
+
+.home-container {
+  height: 100%;
+  overflow-y: scroll;
+	
+  padding-left: 32px;
+  padding-right: 32px;
+
+  .recommended {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-family: "Circular Std Book", Helvetica, sans-serif;
+    color: $white;
+    display: inline-block;
+  }
+
+  .content {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    // & > app-album-card {
+    //   margin-right: 16px;
+    //   margin-bottom: 16px;
+    // }
+
+  }
+}
+
+.genre {
+  color: $white;
+  text-decoration-color: transparent;
+
+  &:hover {
+    text-decoration-color: $white;
+  }
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .see-all {
+    font-family: "Circular Std Bold", Helvetica, sans-serif;
+    display: inline-block;
+    color: $gray;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: $gray;
+    }
+  }
+}

@@ -21,19 +21,14 @@ export class CollectionsComponent implements OnInit{
 
   ngOnInit(): void {  
 
-    
-
     this.dataService.getData().subscribe(res=>{
       this.results=res;
     })
-
 
     this.routeListenerService.getRoute().subscribe(route=>{
       this.dataService.setData(route[1]);
     })
   
-    
-
     this.routeListenerService.setRoute(this.router.url.split('/').filter(e => e !== ''));
   }
 
