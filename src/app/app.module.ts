@@ -12,6 +12,7 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
 import { CollectionsComponent } from './components/collections/collections.component';
+import { GenreCardComponent } from './components/genre-card/genre-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CollectionsComponent } from './components/collections/collections.compo
     SearchComponent,
     HomeComponent,
     AlbumCardComponent,
-    CollectionsComponent
+    CollectionsComponent,
+    GenreCardComponent
   ],
   imports: [
     HttpClientModule,

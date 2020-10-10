@@ -1,0 +1,58 @@
+@import "variables";
+
+.card{
+    position: relative;
+    height: 220px;
+    width: 396px;
+    background-color: $rock;
+    border-radius: 8px;
+    overflow: hidden;
+    .genre{
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 40px;
+        font-family: "Circular Std Bold", Helvetica, sans-serif;   
+        color: $white;
+        margin: 0;
+        padding: 16px;
+    }
+    .profile{
+        position: absolute;
+        transform: rotate(25deg) translate(18%,-2%);
+        height: 128px;
+        width: 128px;
+        top: 92px;
+        left: 268px;
+        overflow: hidden;
+
+    }
+    
+}
+
+.little{
+    width: 186px;
+    height: 186px;
+ 
+    .genre{
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 24px;
+        font-family: "Circular Std Bold", Helvetica, sans-serif;   
+        color: $white;
+        margin: 0;
+        padding: 16px;
+    }
+
+    .profile{
+        position: absolute;
+        transform: rotate(25deg) translate(18%,-2%);
+        height: 100px;
+        width: 100px;
+        top: 87px;
+        left: 87px;
+        overflow: hidden;
+        
+    }
+}
