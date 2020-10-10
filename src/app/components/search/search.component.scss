@@ -30,6 +30,15 @@
     // }
 
   }
+
+  .slider{
+    display: inline-flex;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 24px;
+    scroll-behavior: smooth;
+
+  }
 }
 
 .genre {
