@@ -17,13 +17,20 @@
         <div class="headline">
             <h2 class="title">Most Listened Genres</h2>
         </div>
-        <div class="slider">
-            
-            <app-genre-card></app-genre-card>
-            <app-genre-card></app-genre-card>
-            <app-genre-card></app-genre-card>
-            <app-genre-card></app-genre-card>
-            <app-genre-card></app-genre-card>
+        <div class="slider" >
+            <button (click)="left()" class="btn-scroll left">
+                <svg-icon src="assets/icons/icon/smaller.svg"></svg-icon>
+            </button>
+            <div class="container" #container>
+                <app-genre-card></app-genre-card>
+                <app-genre-card></app-genre-card>
+                <app-genre-card></app-genre-card>
+                <app-genre-card></app-genre-card>
+                <app-genre-card></app-genre-card>
+            </div>
+            <button (click)="right()" class="btn-scroll right">
+                <svg-icon src="assets/icons/icon/greater.svg"></svg-icon>
+            </button>
         </div>
     </div>
     <div class="recommended">
@@ -31,7 +38,7 @@
             <h2 class="title">Look all of them</h2>
         </div>
         <div class="content">
-            
+
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
@@ -43,13 +50,13 @@
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
-            
+
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
-            
+
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>
             <app-genre-card [isLittle]="true"></app-genre-card>

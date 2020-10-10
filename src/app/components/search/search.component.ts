@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { flatten } from '@angular/compiler';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  @ViewChild('container') container:ElementRef<HTMLDivElement>;
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
+  left(){
+    this.container.nativeElement.scrollLeft=0;
+  }
+
+  right(){
+    this.container.nativeElement.scrollLeft=1200;
+  }
+
+  
   
 
 }
