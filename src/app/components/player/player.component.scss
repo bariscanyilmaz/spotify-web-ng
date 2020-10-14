@@ -126,6 +126,31 @@
   height: 4px;
   width: 90px;
   background-color: $gray;
+  border-radius: 2px;
+  position: relative;
+
+  .handle{
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: $white;
+    border-radius: 6px;
+  }
+
+  &:hover{
+    background-color: $spotify-color;
+
+    .handle{
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+
+  }
+  
+
 }
 
 .playback-progress-time-right,
