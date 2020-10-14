@@ -20,6 +20,14 @@ nav {
       &.active {
         background-color: $active-white;
         color: $white;
+
+        .icon{
+          display: none;
+        }
+        .icon-fill{
+          display: block;
+        }
+
       }
     }
 
@@ -61,10 +69,8 @@ nav {
     margin-top: 24px;
   }
   .play-lists-items {
-
     max-height: 180px;
     overflow-y: scroll;
-    
   }
 
   .play-list-item {
@@ -107,4 +113,8 @@ nav {
   background-color: $active-dark;
   border: none;
   height: 1px;
+}
+
+.icon-fill{
+  display: none;
 }

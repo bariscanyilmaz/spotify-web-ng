@@ -7,17 +7,20 @@
 
     <div class="actions">
         <a [routerLink]="['/']" class="button" [ngClass]="{'active':pathValues.length==0}">
-            <svg-icon src="assets/icons/icon/home.svg"></svg-icon>
+            <svg-icon class="icon" src="assets/icons/icon/home.svg"></svg-icon>
+            <svg-icon class="icon-fill" src="assets/icons/icon/home-fill.svg"></svg-icon>
             <span>Home</span>
         </a>
 
         <a [routerLink]="['/search']" class="button" [ngClass]="{'active':pathValues[0]=='search'}">
-            <svg-icon src="assets/icons/icon/search.svg"></svg-icon>
+            <svg-icon class="icon" src="assets/icons/icon/search.svg"></svg-icon>
+            <svg-icon class="icon-fill" src="assets/icons/icon/search-fill.svg"></svg-icon>
             <span>Search</span>
         </a>
 
         <a [routerLink]="['/collections/playlists']" class="button" [ngClass]="{'active':pathValues[0]=='collections'}">
-            <svg-icon src="assets/icons/icon/collection.svg"></svg-icon>
+            <svg-icon class="icon" src="assets/icons/icon/collection.svg"></svg-icon>
+            <svg-icon class="icon-fill" src="assets/icons/icon/collection-fill.svg"></svg-icon>
             <span>Collections</span>
         </a>
 
