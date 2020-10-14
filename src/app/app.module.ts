@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AlbumCardComponent } from './components/album-card/album-card.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { GenreCardComponent } from './components/genre-card/genre-card.component';
+import { PlayListComponent } from './components/play-list/play-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GenreCardComponent } from './components/genre-card/genre-card.component
     HomeComponent,
     AlbumCardComponent,
     CollectionsComponent,
-    GenreCardComponent
+    GenreCardComponent,
+    PlayListComponent
   ],
   imports: [
     HttpClientModule,
