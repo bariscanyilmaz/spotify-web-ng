@@ -1,0 +1,85 @@
+@import "variables";
+
+.song-item {
+  height: 56px;
+  padding-left: 20px;
+  padding-right: 16px;
+  display: flex;
+  align-items: flex-start;
+
+  .song-controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 16px;
+    margin-right: 12px;
+    
+    .btn-play {
+      display: none;
+    }
+
+    &:hover {
+      .btn-play {
+        display: block;
+      }
+
+      .note {
+        display: none;
+      }
+    }
+  }
+
+  .song-info {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+
+    .name,
+    .info {
+      span {
+        font-size: 14px;
+        font-family: "Circular Book", Helvetica, sans-serif;
+        color: $white;
+        margin: 0;
+      }
+    }
+
+    .album::before {
+      content: "•";
+      margin: 0px 4px;
+    }
+
+    .info span {
+      color: $soft-white;
+    }
+  }
+
+  .song-more{
+    display: flex;
+    align-items: center;
+    height: 36px;
+
+    .more{
+      display: none;
+    }
+
+    .time{
+      color: $white;
+      margin-left: 14px;
+      font-size: 14px;
+      font-family: "Circular Book", Helvetica, sans-serif;      
+
+    }
+
+  }
+
+  
+  &:hover{
+   .song-more .more{
+      display: block;
+    }
+  }
+
+
+}

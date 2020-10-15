@@ -1,0 +1,29 @@
+<div class="song-item">
+    <div class="song-controller">
+        <div class="note">
+            <svg-icon src="assets/icons/icon/music-note.svg"></svg-icon>
+        </div>
+        <button class="btn-play">
+            <svg-icon src="assets/icons/icon/play-little.svg"></svg-icon>
+        </button>
+    </div>
+    <div class="song-info">
+        <div class="name">
+            <span>Purple Dreams</span>
+        </div>
+        <div class="info">
+            <a [routerLink]="['/artist/123']">
+                <span class="artist">Figaro Castello</span>
+            </a>
+            <a [routerLink]="['/album/asd123']">
+                <span class="album">Purple Dreams</span>
+            </a>
+        </div>
+    </div>
+    <div class="song-more">
+        <button class="more">
+            <svg-icon src="assets/icons/icon/3dot.svg"></svg-icon>
+        </button>
+        <div class="time"><span>2.47</span></div>
+    </div>
+</div>

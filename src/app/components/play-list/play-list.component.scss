@@ -31,7 +31,7 @@
           height: 15px;
           line-height: 15px;
           margin-bottom: 0;
-          font-family: "Circular Std Bold", Helvetica, sans-serif;
+          font-family: "Circular Bold", Helvetica, sans-serif;
           color: $white;
           text-transform: uppercase;
         }
@@ -40,8 +40,9 @@
           margin: 0;
           margin-top: 4px;
           padding: 0.08em 0px;
-          font-weight: 900 !important;
-          font-family: "Circular Std Bold", Helvetica, sans-serif;
+          font-weight: 900;
+          letter-spacing: -.04em;
+          font-family: "Circular Bold", Helvetica, sans-serif;
           color: $white;
           font-size: 96px;
           line-height: 96px;
@@ -52,7 +53,7 @@
           margin-top: 8px;
           color: rgba($color: $white, $alpha: 0.7);
           font-size: 14px;
-          font-family: "Circular Std Book", Helvetica, sans-serif;
+          font-family: "Circular Book", Helvetica, sans-serif;
         }
 
         .sub-defination {
@@ -60,7 +61,7 @@
 
           .owner {
             font-size: 14px;
-            font-family: "Circular Std Bold", Helvetica, sans-serif;
+            font-family: "Circular Bold", Helvetica, sans-serif;
             color: $white;
             text-decoration: none;
             &:hover {
@@ -70,7 +71,7 @@
 
           span {
             font-size: 14px;
-            font-family: "Circular Std Book", Helvetica, sans-serif;
+            font-family: "Circular Book", Helvetica, sans-serif;
             color: rgba($color: $white, $alpha: 0.7);
           }
 
