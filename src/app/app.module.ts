@@ -15,6 +15,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { GenreCardComponent } from './components/genre-card/genre-card.component';
 import { PlayListComponent } from './components/play-list/play-list.component';
 import { SongItemComponent } from './components/song-item/song-item.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SongItemComponent } from './components/song-item/song-item.component';
     CollectionsComponent,
     GenreCardComponent,
     PlayListComponent,
-    SongItemComponent
+    SongItemComponent,
+    ArtistComponent
   ],
   imports: [
     HttpClientModule,
