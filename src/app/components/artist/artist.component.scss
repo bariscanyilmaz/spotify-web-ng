@@ -1,0 +1,118 @@
+@import "variables";
+
+.artist {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+
+  .advertise-panel {
+    display: flex;
+    height: 280px;
+    background-image: url("https://i.scdn.co/image/255c86f0170802d8fc4c7388a798a6a98e31bdfd");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    padding-bottom: 24px;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .artist-meta {
+        font-size: 12px;
+        margin-top: 4px;
+        height: 15px;
+        line-height: 15px;
+        margin-bottom: 0;
+        font-family: "Circular Bold", Helvetica, sans-serif;
+        color: $white;
+      }
+
+      .artist-title {
+        margin: 0;
+        margin-top: 4px;
+        padding: 0.08em 0px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        font-family: "Circular Bold", Helvetica, sans-serif;
+        color: $white;
+        font-size: 96px;
+        line-height: 96px;
+      }
+
+      .defination {
+        margin: 0;
+        margin-top: 8px;
+        color: rgba($color: $white, $alpha: 0.7);
+        font-size: 14px;
+        font-family: "Circular Book", Helvetica, sans-serif;
+      }
+
+      .sub-defination {
+        margin-top: 8px;
+
+        .owner {
+          font-size: 14px;
+          font-family: "Circular Bold", Helvetica, sans-serif;
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          font-size: 16px;
+          font-family: "Circular Bold", Helvetica, sans-serif;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .song-player {
+    height: 56px;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+
+    .btn-play {
+      margin-right: 32px;
+      svg {
+        height: 56px;
+        width: 56px;
+      }
+    }
+
+    .btn-like {
+      margin-right: 24px;
+      svg {
+        height: 50px;
+        width: 50px;
+
+        path {
+          fill: $spotify-color;
+          stroke: $spotify-color;
+        }
+      }
+    }
+
+    .btn-more {
+      svg {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+  .song-list {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.song {
+  height: 100px;
+  width: 100%;
+}
