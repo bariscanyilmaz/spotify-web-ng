@@ -2,7 +2,7 @@
 
 This project is a clone of spotify web app. 
 
-Figma [link].(https://www.figma.com/file/uKHj5AsIXRBTHAf9CMFgoj/Spotify-Web)
+Figma [link](https://www.figma.com/file/uKHj5AsIXRBTHAf9CMFgoj/Spotify-Web).
 
 
 ## Development server
